@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment System UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>📅Raganit Dental Clinic</h1>
+            <p>Fill out the form below to secure your slot.</p>
+        </header>
+
+        <section class="booking-card">
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="e.g. Jude Raganit" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Cosmetic Dentistry</label>
+                    <select>
+                        <option>Teeth Whitening</option>
+                        <option>Dental Veneers</option>
+                        <option>Dental Bonding</option>
+                        <option>Gum Contouring</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Restorative Dentistry</label>
+                    <select>
+                        <option>Dental Crowns</option>
+                        <option>Dental Bridges</option>
+                        <option>Dentures</option>
+                        <option>Dental Implants</option>
+                        <option>Root Canal Therapy</option>
+                    </select>
+                </div>
+
+                <div class="form">
+                    <label>Orthodontics</label>
+                    <select>
+                        <option>Traditional Braces</option>
+                        <option>Clear Aligners</option>
+                        <option>Retainers</option>
+                    </select>
+                </div>
+
+                <div class="form">
+                    <label>Periodontics Gum Care</label>
+                    <select>
+                        <option>Scaling and Root Planing (Deep Cleaning)</option>
+                        <option>Gum Grafting</option>
+                        <option>Pocket Reduction</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Date</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Time</label>
+                        <input type="time" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Confirm Booking</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h3>Recent Bookings</h3>
+            <table class="appointment-table">
+                <thead>
+                    <tr>
+                        <th>Client</th>
+                        <th>Service</th>
+                        <th>Date & Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jude Raganit</td>
+                        <td>Orthodontics</td>
+                        <td>Oct 24, 10:30 AM</td>
+                        <td><span class="status confirmed">Confirmed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+</body>
+</html>
+
